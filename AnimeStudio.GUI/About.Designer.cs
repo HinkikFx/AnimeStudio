@@ -111,7 +111,7 @@ namespace AnimeStudio.GUI
             tabPage1.Padding = new System.Windows.Forms.Padding(8, 6, 8, 6);
             tabPage1.Size = new Size(787, 775);
             tabPage1.TabIndex = 0;
-            tabPage1.Text = "Info";
+            tabPage1.Text = "信息";
             // 
             // panel1
             // 
@@ -134,7 +134,7 @@ namespace AnimeStudio.GUI
             label2.Name = "label2";
             label2.Size = new Size(752, 75);
             label2.TabIndex = 0;
-            label2.Text = "Updated AssetStudio supporting GI 5.7+, HSR 3.4+, ZZZ 2.1+ with improvements and new features !";
+            label2.Text = "更新的 AssetStudio，支持 GI 5.7+、HSR 3.4+、ZZZ 2.1+，包含改进和新功能！";
             label2.UseCompatibleTextRendering = true;
             // 
             // textBox2
@@ -162,7 +162,7 @@ namespace AnimeStudio.GUI
             label11.Name = "label11";
             label11.Size = new Size(195, 32);
             label11.TabIndex = 17;
-            label11.Text = "Special thanks to";
+            label11.Text = "特别感谢";
             // 
             // label10
             // 
@@ -172,7 +172,7 @@ namespace AnimeStudio.GUI
             label10.Name = "label10";
             label10.Size = new Size(92, 32);
             label10.TabIndex = 16;
-            label10.Text = "Version";
+            label10.Text = "版本";
             // 
             // tableLayoutPanel2
             // 
@@ -220,7 +220,7 @@ namespace AnimeStudio.GUI
             gitAelurumLinkLabel.Size = new Size(147, 32);
             gitAelurumLinkLabel.TabIndex = 26;
             gitAelurumLinkLabel.TabStop = true;
-            gitAelurumLinkLabel.Text = "Project page";
+            gitAelurumLinkLabel.Text = "项目页面";
             gitAelurumLinkLabel.LinkClicked += gitAelurumLinkLabel_LinkClicked;
             // 
             // gitYarikLinkLabel
@@ -234,7 +234,7 @@ namespace AnimeStudio.GUI
             gitYarikLinkLabel.Size = new Size(147, 32);
             gitYarikLinkLabel.TabIndex = 14;
             gitYarikLinkLabel.TabStop = true;
-            gitYarikLinkLabel.Text = "Project page";
+            gitYarikLinkLabel.Text = "项目页面";
             gitYarikLinkLabel.LinkClicked += gitYarikLinkLabel_LinkClicked;
             // 
             // gitHashblenLinkLabel
@@ -248,7 +248,7 @@ namespace AnimeStudio.GUI
             gitHashblenLinkLabel.Size = new Size(147, 32);
             gitHashblenLinkLabel.TabIndex = 17;
             gitHashblenLinkLabel.TabStop = true;
-            gitHashblenLinkLabel.Text = "Project page";
+            gitHashblenLinkLabel.Text = "项目页面";
             gitHashblenLinkLabel.LinkClicked += gitHashblenLinkLabel_LinkClicked;
             // 
             // gitRazmothLinkLabel
@@ -262,7 +262,7 @@ namespace AnimeStudio.GUI
             gitRazmothLinkLabel.Size = new Size(147, 32);
             gitRazmothLinkLabel.TabIndex = 20;
             gitRazmothLinkLabel.TabStop = true;
-            gitRazmothLinkLabel.Text = "Project page";
+            gitRazmothLinkLabel.Text = "项目页面";
             gitRazmothLinkLabel.LinkClicked += gitRazmothLinkLabel_LinkClicked;
             // 
             // gitPerfareLinkLabel
@@ -276,7 +276,7 @@ namespace AnimeStudio.GUI
             gitPerfareLinkLabel.Size = new Size(147, 32);
             gitPerfareLinkLabel.TabIndex = 23;
             gitPerfareLinkLabel.TabStop = true;
-            gitPerfareLinkLabel.Text = "Project page";
+            gitPerfareLinkLabel.Text = "项目页面";
             gitPerfareLinkLabel.LinkClicked += gitPerfareLinkLabel_LinkClicked;
             // 
             // label18
@@ -354,7 +354,7 @@ namespace AnimeStudio.GUI
             label12.Name = "label12";
             label12.Size = new Size(173, 32);
             label12.TabIndex = 21;
-            label12.Text = "Original Studio";
+            label12.Text = "原始工作室";
             // 
             // label13
             // 
@@ -435,7 +435,7 @@ namespace AnimeStudio.GUI
             linkLabel2.Size = new Size(735, 33);
             linkLabel2.TabIndex = 14;
             linkLabel2.TabStop = true;
-            linkLabel2.Text = "Report a bug";
+            linkLabel2.Text = "报告 Bug";
             linkLabel2.TextAlign = ContentAlignment.MiddleCenter;
             linkLabel2.VisitedLinkColor = System.Drawing.Color.Fuchsia;
             linkLabel2.LinkClicked += linkLabel2_LinkClicked;
@@ -452,7 +452,7 @@ namespace AnimeStudio.GUI
             linkLabel1.Size = new Size(235, 46);
             linkLabel1.TabIndex = 13;
             linkLabel1.TabStop = true;
-            linkLabel1.Text = "Project page";
+            linkLabel1.Text = "项目页面";
             linkLabel1.TextAlign = ContentAlignment.MiddleCenter;
             linkLabel1.LinkClicked += linkLabel1_LinkClicked;
             // 
@@ -466,7 +466,7 @@ namespace AnimeStudio.GUI
             label5.Name = "label5";
             label5.Size = new Size(191, 46);
             label5.TabIndex = 0;
-            label5.Text = "Product name :";
+            label5.Text = "产品名称：";
             label5.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // productNamelabel
@@ -492,7 +492,7 @@ namespace AnimeStudio.GUI
             label7.Name = "label7";
             label7.Size = new Size(191, 46);
             label7.TabIndex = 2;
-            label7.Text = "Version :";
+            label7.Text = "版本：";
             label7.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // modVersionLabel
@@ -520,7 +520,7 @@ namespace AnimeStudio.GUI
             label4.Name = "label4";
             label4.Size = new Size(191, 46);
             label4.TabIndex = 4;
-            label4.Text = "Made with love by :";
+            label4.Text = "由以下开发：";
             label4.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // checkUpdatesLinkLabel
@@ -535,7 +535,7 @@ namespace AnimeStudio.GUI
             checkUpdatesLinkLabel.Size = new Size(235, 46);
             checkUpdatesLinkLabel.TabIndex = 6;
             checkUpdatesLinkLabel.TabStop = true;
-            checkUpdatesLinkLabel.Text = "Check for Updates";
+            checkUpdatesLinkLabel.Text = "检查更新";
             checkUpdatesLinkLabel.TextAlign = ContentAlignment.MiddleCenter;
             checkUpdatesLinkLabel.LinkClicked += checkUpdatesLinkLabel_LinkClicked;
             // 
@@ -565,7 +565,7 @@ namespace AnimeStudio.GUI
             gitEscartemLinkLabel.Size = new Size(235, 46);
             gitEscartemLinkLabel.TabIndex = 12;
             gitEscartemLinkLabel.TabStop = true;
-            gitEscartemLinkLabel.Text = "Github Profile";
+            gitEscartemLinkLabel.Text = "Github 主页";
             gitEscartemLinkLabel.TextAlign = ContentAlignment.MiddleCenter;
             gitEscartemLinkLabel.VisitedLinkColor = System.Drawing.Color.Fuchsia;
             // 
@@ -578,7 +578,7 @@ namespace AnimeStudio.GUI
             tabPage2.Padding = new System.Windows.Forms.Padding(8, 6, 8, 6);
             tabPage2.Size = new Size(787, 775);
             tabPage2.TabIndex = 1;
-            tabPage2.Text = "License";
+            tabPage2.Text = "许可证";
             tabPage2.UseVisualStyleBackColor = true;
             // 
             // licenseRichTextBox
@@ -632,7 +632,7 @@ namespace AnimeStudio.GUI
             CloseButton.Name = "CloseButton";
             CloseButton.Size = new Size(832, 96);
             CloseButton.TabIndex = 1;
-            CloseButton.Text = "Close";
+            CloseButton.Text = "关闭";
             CloseButton.UseVisualStyleBackColor = false;
             CloseButton.Click += CloseButton_Click;
             // 
@@ -687,7 +687,7 @@ namespace AnimeStudio.GUI
             MinimizeBox = false;
             Name = "AboutForm";
             StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            Text = "About";
+            Text = "关于";
             TopMost = true;
             tabControl1.ResumeLayout(false);
             tabPage1.ResumeLayout(false);

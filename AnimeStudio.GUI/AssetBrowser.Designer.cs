@@ -89,7 +89,7 @@ namespace AnimeStudio.GUI
             loadAssetMap.Name = "loadAssetMap";
             loadAssetMap.Size = new System.Drawing.Size(354, 51);
             loadAssetMap.TabIndex = 0;
-            loadAssetMap.Text = "Load AssetMap";
+            loadAssetMap.Text = "加载 AssetMap";
             loadAssetMap.UseVisualStyleBackColor = false;
             loadAssetMap.Click += loadAssetMap_Click;
             // 
@@ -101,7 +101,7 @@ namespace AnimeStudio.GUI
             clear.Name = "clear";
             clear.Size = new System.Drawing.Size(172, 51);
             clear.TabIndex = 1;
-            clear.Text = "Clear";
+            clear.Text = "清除";
             clear.UseVisualStyleBackColor = false;
             clear.Click += clear_Click;
             // 
@@ -114,7 +114,7 @@ namespace AnimeStudio.GUI
             loadSelected.Name = "loadSelected";
             loadSelected.Size = new System.Drawing.Size(354, 51);
             loadSelected.TabIndex = 2;
-            loadSelected.Text = "Load Selected";
+            loadSelected.Text = "加载所选";
             loadSelected.UseVisualStyleBackColor = false;
             loadSelected.Click += loadSelected_Click;
             // 
@@ -127,7 +127,7 @@ namespace AnimeStudio.GUI
             exportSelected.Name = "exportSelected";
             exportSelected.Size = new System.Drawing.Size(445, 51);
             exportSelected.TabIndex = 3;
-            exportSelected.Text = "Export Selected";
+            exportSelected.Text = "导出所选";
             exportSelected.UseVisualStyleBackColor = false;
             exportSelected.Click += exportSelected_Click;
             // 
@@ -139,7 +139,7 @@ namespace AnimeStudio.GUI
             relocateSource.Name = "relocateSource";
             relocateSource.Size = new System.Drawing.Size(211, 50);
             relocateSource.TabIndex = 4;
-            relocateSource.Text = "Relocate source";
+            relocateSource.Text = "重新定位源";
             relocateSource.UseVisualStyleBackColor = false;
             relocateSource.Click += relocateSource_Click;
             // 
@@ -217,7 +217,7 @@ namespace AnimeStudio.GUI
             sourceTextBox.Location = new System.Drawing.Point(461, 6);
             sourceTextBox.Margin = new Padding(5, 6, 5, 6);
             sourceTextBox.Name = "sourceTextBox";
-            sourceTextBox.PlaceholderText = "Source";
+            sourceTextBox.PlaceholderText = "源";
             sourceTextBox.Size = new System.Drawing.Size(218, 39);
             sourceTextBox.TabIndex = 6;
             sourceTextBox.KeyPress += SourceTextBox_KeyPress;
@@ -241,7 +241,7 @@ namespace AnimeStudio.GUI
             nameTextBox.Location = new System.Drawing.Point(5, 6);
             nameTextBox.Margin = new Padding(5, 6, 5, 6);
             nameTextBox.Name = "nameTextBox";
-            nameTextBox.PlaceholderText = "Name";
+            nameTextBox.PlaceholderText = "名称";
             nameTextBox.Size = new System.Drawing.Size(218, 39);
             nameTextBox.TabIndex = 4;
             nameTextBox.KeyPress += NameTextBox_KeyPress;
@@ -253,7 +253,7 @@ namespace AnimeStudio.GUI
             containerTextBox.Location = new System.Drawing.Point(233, 6);
             containerTextBox.Margin = new Padding(5, 6, 5, 6);
             containerTextBox.Name = "containerTextBox";
-            containerTextBox.PlaceholderText = "Container";
+            containerTextBox.PlaceholderText = "容器";
             containerTextBox.Size = new System.Drawing.Size(218, 39);
             containerTextBox.TabIndex = 5;
             containerTextBox.KeyPress += ContainerTextBox_KeyPress;
@@ -267,7 +267,7 @@ namespace AnimeStudio.GUI
             searchBtn.Name = "searchBtn";
             searchBtn.Size = new System.Drawing.Size(215, 53);
             searchBtn.TabIndex = 10;
-            searchBtn.Text = "Search";
+            searchBtn.Text = "搜索";
             searchBtn.UseVisualStyleBackColor = true;
             searchBtn.Click += searchBtn_Click;
             // 
@@ -290,7 +290,7 @@ namespace AnimeStudio.GUI
             filterSelectTypesBtn.Name = "filterSelectTypesBtn";
             filterSelectTypesBtn.Size = new System.Drawing.Size(222, 57);
             filterSelectTypesBtn.TabIndex = 11;
-            filterSelectTypesBtn.Text = "Select Types";
+            filterSelectTypesBtn.Text = "选择类型";
             filterSelectTypesBtn.UseVisualStyleBackColor = true;
             filterSelectTypesBtn.Click += filterSelectTypesBtn_Click;
             // 
@@ -321,7 +321,7 @@ namespace AnimeStudio.GUI
             loadMapTwoBtn.Name = "loadMapTwoBtn";
             loadMapTwoBtn.Size = new System.Drawing.Size(519, 44);
             loadMapTwoBtn.TabIndex = 0;
-            loadMapTwoBtn.Text = "Load second map";
+            loadMapTwoBtn.Text = "加载第二张映射";
             loadMapTwoBtn.UseVisualStyleBackColor = true;
             loadMapTwoBtn.Click += loadMapTwoBtn_Click;
             // 
@@ -334,7 +334,7 @@ namespace AnimeStudio.GUI
             clearMapTwoBtn.Name = "clearMapTwoBtn";
             clearMapTwoBtn.Size = new System.Drawing.Size(519, 44);
             clearMapTwoBtn.TabIndex = 1;
-            clearMapTwoBtn.Text = "Clear second map";
+            clearMapTwoBtn.Text = "清除第二张映射";
             clearMapTwoBtn.UseVisualStyleBackColor = true;
             clearMapTwoBtn.Click += clearMapTwoBtn_Click;
             // 
@@ -362,7 +362,7 @@ namespace AnimeStudio.GUI
             Margin = new Padding(5, 6, 5, 6);
             Name = "AssetBrowser";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Asset Browser";
+            Text = "资产浏览器";
             FormClosing += AssetBrowser_FormClosing;
             tableLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)assetDataGridView).EndInit();

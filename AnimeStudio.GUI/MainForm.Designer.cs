@@ -225,20 +225,20 @@ namespace AnimeStudio.GUI
             fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { loadFileToolStripMenuItem, loadFolderToolStripMenuItem, toolStripMenuItem1, extractFileToolStripMenuItem, extractFolderToolStripMenuItem, toolStripSeparator6, resetToolStripMenuItem, abortStripMenuItem, toolStripSeparator4, exitToolStripMenuItem });
             fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             fileToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
-            fileToolStripMenuItem.Text = "File";
+            fileToolStripMenuItem.Text = "文件";
             // 
             // loadFileToolStripMenuItem
             // 
             loadFileToolStripMenuItem.Name = "loadFileToolStripMenuItem";
             loadFileToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
-            loadFileToolStripMenuItem.Text = "Load file";
+            loadFileToolStripMenuItem.Text = "加载文件";
             loadFileToolStripMenuItem.Click += loadFile_Click;
             // 
             // loadFolderToolStripMenuItem
             // 
             loadFolderToolStripMenuItem.Name = "loadFolderToolStripMenuItem";
             loadFolderToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
-            loadFolderToolStripMenuItem.Text = "Load folder";
+            loadFolderToolStripMenuItem.Text = "加载文件夹";
             loadFolderToolStripMenuItem.Click += loadFolder_Click;
             // 
             // toolStripMenuItem1
@@ -250,14 +250,14 @@ namespace AnimeStudio.GUI
             // 
             extractFileToolStripMenuItem.Name = "extractFileToolStripMenuItem";
             extractFileToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
-            extractFileToolStripMenuItem.Text = "Extract file";
+            extractFileToolStripMenuItem.Text = "提取文件";
             extractFileToolStripMenuItem.Click += extractFileToolStripMenuItem_Click;
             // 
             // extractFolderToolStripMenuItem
             // 
             extractFolderToolStripMenuItem.Name = "extractFolderToolStripMenuItem";
             extractFolderToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
-            extractFolderToolStripMenuItem.Text = "Extract folder";
+            extractFolderToolStripMenuItem.Text = "提取文件夹";
             extractFolderToolStripMenuItem.Click += extractFolderToolStripMenuItem_Click;
             // 
             // toolStripSeparator6
@@ -269,14 +269,14 @@ namespace AnimeStudio.GUI
             // 
             resetToolStripMenuItem.Name = "resetToolStripMenuItem";
             resetToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
-            resetToolStripMenuItem.Text = "Reset";
+            resetToolStripMenuItem.Text = "重置";
             resetToolStripMenuItem.Click += resetToolStripMenuItem_Click;
             // 
             // abortStripMenuItem
             // 
             abortStripMenuItem.Name = "abortStripMenuItem";
             abortStripMenuItem.Size = new System.Drawing.Size(181, 26);
-            abortStripMenuItem.Text = "Abort";
+            abortStripMenuItem.Text = "中止";
             abortStripMenuItem.Click += abortStripMenuItem_Click;
             // 
             // toolStripSeparator4
@@ -288,7 +288,7 @@ namespace AnimeStudio.GUI
             // 
             exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             exitToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
-            exitToolStripMenuItem.Text = "Exit";
+            exitToolStripMenuItem.Text = "退出";
             exitToolStripMenuItem.Click += exitToolStripMenuItem_Click;
             // 
             // optionsToolStripMenuItem
@@ -296,20 +296,20 @@ namespace AnimeStudio.GUI
             optionsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { gameToolStripMenuItem, gameSelect, toolStripMenuItem14, editUnityCNKeysToolStripMenuItem, toolStripSeparator13, assetLoadingToolStripMenuItem, enableResolveDependencies, allowDuplicates, skipContainer, toolStripSeparator12, generalToolStripMenuItem1, showExpOpt, appThemeToolStripMenuItem, toolStripSeparator1, miscToolStripMenuItem1, toolStripMenuItem21, debugToolStripMenuItem });
             optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
             optionsToolStripMenuItem.Size = new System.Drawing.Size(75, 24);
-            optionsToolStripMenuItem.Text = "Options";
+            optionsToolStripMenuItem.Text = "选项";
             // 
             // gameToolStripMenuItem
             // 
             gameToolStripMenuItem.Enabled = false;
             gameToolStripMenuItem.Name = "gameToolStripMenuItem";
             gameToolStripMenuItem.Size = new System.Drawing.Size(246, 26);
-            gameToolStripMenuItem.Text = "Game";
+            gameToolStripMenuItem.Text = "游戏";
             // 
             // gameSelect
             // 
             gameSelect.Name = "gameSelect";
             gameSelect.Size = new System.Drawing.Size(246, 26);
-            gameSelect.Text = "Select Game";
+            gameSelect.Text = "选择游戏";
             gameSelect.Click += gameSelectToolStripMenuItem_Click;
             // 
             // toolStripMenuItem14
@@ -317,7 +317,7 @@ namespace AnimeStudio.GUI
             toolStripMenuItem14.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { specifyUnityVersion });
             toolStripMenuItem14.Name = "toolStripMenuItem14";
             toolStripMenuItem14.Size = new System.Drawing.Size(246, 26);
-            toolStripMenuItem14.Text = "Specify Unity version";
+            toolStripMenuItem14.Text = "指定 Unity 版本";
             // 
             // specifyUnityVersion
             // 
@@ -335,7 +335,7 @@ namespace AnimeStudio.GUI
             assetLoadingToolStripMenuItem.Enabled = false;
             assetLoadingToolStripMenuItem.Name = "assetLoadingToolStripMenuItem";
             assetLoadingToolStripMenuItem.Size = new System.Drawing.Size(246, 26);
-            assetLoadingToolStripMenuItem.Text = "Asset loading";
+            assetLoadingToolStripMenuItem.Text = "资源加载";
             // 
             // enableResolveDependencies
             // 
@@ -344,7 +344,7 @@ namespace AnimeStudio.GUI
             enableResolveDependencies.CheckState = System.Windows.Forms.CheckState.Checked;
             enableResolveDependencies.Name = "enableResolveDependencies";
             enableResolveDependencies.Size = new System.Drawing.Size(246, 26);
-            enableResolveDependencies.Text = "Resolve dependencies";
+            enableResolveDependencies.Text = "解析依赖项";
             enableResolveDependencies.ToolTipText = "Toggle the behaviour of loading assets.\r\nDisable to load file(s) without its dependencies.";
             enableResolveDependencies.CheckedChanged += enableResolveDependencies_CheckedChanged;
             // 
@@ -353,7 +353,7 @@ namespace AnimeStudio.GUI
             allowDuplicates.CheckOnClick = true;
             allowDuplicates.Name = "allowDuplicates";
             allowDuplicates.Size = new System.Drawing.Size(246, 26);
-            allowDuplicates.Text = "Allow duplicates";
+            allowDuplicates.Text = "允许重复";
             allowDuplicates.ToolTipText = "Toggle the behaviour of exporting assets.\r\nEnable to allow assets with duplicate names to be exported.";
             allowDuplicates.CheckedChanged += allowDuplicates_CheckedChanged;
             // 
@@ -362,7 +362,7 @@ namespace AnimeStudio.GUI
             skipContainer.CheckOnClick = true;
             skipContainer.Name = "skipContainer";
             skipContainer.Size = new System.Drawing.Size(246, 26);
-            skipContainer.Text = "Skip container recovery";
+            skipContainer.Text = "跳过容器恢复";
             skipContainer.ToolTipText = "Skips the container recovery step.\nImproves loading when dealing with a large number of files.";
             skipContainer.CheckedChanged += skipContainer_CheckedChanged;
             // 
@@ -376,13 +376,13 @@ namespace AnimeStudio.GUI
             generalToolStripMenuItem1.Enabled = false;
             generalToolStripMenuItem1.Name = "generalToolStripMenuItem1";
             generalToolStripMenuItem1.Size = new System.Drawing.Size(246, 26);
-            generalToolStripMenuItem1.Text = "General";
+            generalToolStripMenuItem1.Text = "常规";
             // 
             // showExpOpt
             // 
             showExpOpt.Name = "showExpOpt";
             showExpOpt.Size = new System.Drawing.Size(246, 26);
-            showExpOpt.Text = "Export options";
+            showExpOpt.Text = "导出选项";
             showExpOpt.Click += showExpOpt_Click;
             // 
             // appThemeToolStripMenuItem
@@ -390,7 +390,7 @@ namespace AnimeStudio.GUI
             appThemeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { specifyTheme });
             appThemeToolStripMenuItem.Name = "appThemeToolStripMenuItem";
             appThemeToolStripMenuItem.Size = new System.Drawing.Size(246, 26);
-            appThemeToolStripMenuItem.Text = "App Theme";
+            appThemeToolStripMenuItem.Text = "应用主题";
             // 
             // specifyTheme
             // 
@@ -410,21 +410,21 @@ namespace AnimeStudio.GUI
             miscToolStripMenuItem1.Enabled = false;
             miscToolStripMenuItem1.Name = "miscToolStripMenuItem1";
             miscToolStripMenuItem1.Size = new System.Drawing.Size(246, 26);
-            miscToolStripMenuItem1.Text = "Misc.";
+            miscToolStripMenuItem1.Text = "杂项";
             // 
             // toolStripMenuItem21
             // 
             toolStripMenuItem21.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { displayAll, enablePreview, enableModelPreview, modelsOnly, displayInfo });
             toolStripMenuItem21.Name = "toolStripMenuItem21";
             toolStripMenuItem21.Size = new System.Drawing.Size(246, 26);
-            toolStripMenuItem21.Text = "Advanced";
+            toolStripMenuItem21.Text = "高级";
             // 
             // displayAll
             // 
             displayAll.CheckOnClick = true;
             displayAll.Name = "displayAll";
             displayAll.Size = new System.Drawing.Size(260, 26);
-            displayAll.Text = "Show hidden assets";
+            displayAll.Text = "显示隐藏资源";
             displayAll.ToolTipText = "Check this option will display all types assets. Not extractable assets can export the RAW file.";
             // 
             // enablePreview
@@ -434,7 +434,7 @@ namespace AnimeStudio.GUI
             enablePreview.CheckState = System.Windows.Forms.CheckState.Checked;
             enablePreview.Name = "enablePreview";
             enablePreview.Size = new System.Drawing.Size(260, 26);
-            enablePreview.Text = "Preview enabled";
+            enablePreview.Text = "启用预览";
             enablePreview.ToolTipText = "Toggle the loading and preview of readable assets, such as images, sounds, text, etc.\r\nDisable preview if you have performance or compatibility issues.";
             // 
             // enableModelPreview
@@ -442,7 +442,7 @@ namespace AnimeStudio.GUI
             enableModelPreview.CheckOnClick = true;
             enableModelPreview.Name = "enableModelPreview";
             enableModelPreview.Size = new System.Drawing.Size(260, 26);
-            enableModelPreview.Text = "Model preview enabled";
+            enableModelPreview.Text = "启用模型预览";
             enableModelPreview.CheckedChanged += enableModelPreview_CheckedChanged;
             // 
             // modelsOnly
@@ -450,7 +450,7 @@ namespace AnimeStudio.GUI
             modelsOnly.CheckOnClick = true;
             modelsOnly.Name = "modelsOnly";
             modelsOnly.Size = new System.Drawing.Size(260, 26);
-            modelsOnly.Text = "Filter models only";
+            modelsOnly.Text = "仅筛选模型";
             // 
             // displayInfo
             // 
@@ -459,7 +459,7 @@ namespace AnimeStudio.GUI
             displayInfo.CheckState = System.Windows.Forms.CheckState.Checked;
             displayInfo.Name = "displayInfo";
             displayInfo.Size = new System.Drawing.Size(260, 26);
-            displayInfo.Text = "Display asset information";
+            displayInfo.Text = "显示资源信息";
             displayInfo.ToolTipText = "Toggle the overlay that shows information about each asset, eg. image size, format, audio bitrate, etc.";
             // 
             // debugToolStripMenuItem
@@ -467,7 +467,7 @@ namespace AnimeStudio.GUI
             debugToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { toolStripMenuItem15, exportClassStructuresMenuItem, enableConsole, clearConsoleToolStripMenuItem, enableFileLogging, loggedEventsMenuItem });
             debugToolStripMenuItem.Name = "debugToolStripMenuItem";
             debugToolStripMenuItem.Size = new System.Drawing.Size(246, 26);
-            debugToolStripMenuItem.Text = "Debug";
+            debugToolStripMenuItem.Text = "调试";
             // 
             // toolStripMenuItem15
             // 
@@ -476,14 +476,14 @@ namespace AnimeStudio.GUI
             toolStripMenuItem15.CheckState = System.Windows.Forms.CheckState.Checked;
             toolStripMenuItem15.Name = "toolStripMenuItem15";
             toolStripMenuItem15.Size = new System.Drawing.Size(237, 26);
-            toolStripMenuItem15.Text = "Show error messages";
+            toolStripMenuItem15.Text = "显示错误信息";
             toolStripMenuItem15.Click += toolStripMenuItem15_Click;
             // 
             // exportClassStructuresMenuItem
             // 
             exportClassStructuresMenuItem.Name = "exportClassStructuresMenuItem";
             exportClassStructuresMenuItem.Size = new System.Drawing.Size(237, 26);
-            exportClassStructuresMenuItem.Text = "Export class structures";
+            exportClassStructuresMenuItem.Text = "导出类结构";
             exportClassStructuresMenuItem.Click += exportClassStructuresMenuItem_Click;
             // 
             // enableConsole
@@ -493,14 +493,14 @@ namespace AnimeStudio.GUI
             enableConsole.CheckState = System.Windows.Forms.CheckState.Checked;
             enableConsole.Name = "enableConsole";
             enableConsole.Size = new System.Drawing.Size(237, 26);
-            enableConsole.Text = "Enable Console";
+            enableConsole.Text = "启用控制台";
             enableConsole.CheckedChanged += enableConsole_CheckedChanged;
             // 
             // clearConsoleToolStripMenuItem
             // 
             clearConsoleToolStripMenuItem.Name = "clearConsoleToolStripMenuItem";
             clearConsoleToolStripMenuItem.Size = new System.Drawing.Size(237, 26);
-            clearConsoleToolStripMenuItem.Text = "Clear Console";
+            clearConsoleToolStripMenuItem.Text = "清除控制台";
             clearConsoleToolStripMenuItem.Click += clearConsoleToolStripMenuItem_Click;
             // 
             // enableFileLogging
@@ -510,14 +510,14 @@ namespace AnimeStudio.GUI
             enableFileLogging.CheckState = System.Windows.Forms.CheckState.Checked;
             enableFileLogging.Name = "enableFileLogging";
             enableFileLogging.Size = new System.Drawing.Size(237, 26);
-            enableFileLogging.Text = "Enable file logging";
+            enableFileLogging.Text = "启用文件日志";
             enableFileLogging.CheckedChanged += enableFileLogging_CheckedChanged;
             // 
             // loggedEventsMenuItem
             // 
             loggedEventsMenuItem.Name = "loggedEventsMenuItem";
             loggedEventsMenuItem.Size = new System.Drawing.Size(237, 26);
-            loggedEventsMenuItem.Text = "Logged events";
+            loggedEventsMenuItem.Text = "记录的事件";
             loggedEventsMenuItem.DropDownClosed += loggedEventsMenuItem_DropDownClosed;
             // 
             // exportToolStripMenuItem
@@ -525,34 +525,34 @@ namespace AnimeStudio.GUI
             exportToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { generalToolStripMenuItem, exportAllAssetsMenuItem, exportSelectedAssetsMenuItem, exportFilteredAssetsMenuItem, toolStripSeparator3, formatSpecificToolStripMenuItem, toolStripMenuItem2, toolStripMenuItem3, toolStripMenuItem16, toolStripSeparator2, assetsStructureToolStripMenuItem, toolStripMenuItem10, sceneHierarchy, toolStripSeparator7, toolStripMenuItem30, modelsIncludeAnimationClips, toolStripMenuItem29, modelsMerge, modelsObjectsExportAll, modelsObjectsExportSelected, toolStripMenuItem28, modelsNodesExportSelected });
             exportToolStripMenuItem.Name = "exportToolStripMenuItem";
             exportToolStripMenuItem.Size = new System.Drawing.Size(66, 24);
-            exportToolStripMenuItem.Text = "Export";
+            exportToolStripMenuItem.Text = "导出";
             // 
             // generalToolStripMenuItem
             // 
             generalToolStripMenuItem.Enabled = false;
             generalToolStripMenuItem.Name = "generalToolStripMenuItem";
             generalToolStripMenuItem.Size = new System.Drawing.Size(249, 26);
-            generalToolStripMenuItem.Text = "General";
+            generalToolStripMenuItem.Text = "常规";
             // 
             // exportAllAssetsMenuItem
             // 
             exportAllAssetsMenuItem.Name = "exportAllAssetsMenuItem";
             exportAllAssetsMenuItem.Size = new System.Drawing.Size(249, 26);
-            exportAllAssetsMenuItem.Text = "All assets";
+            exportAllAssetsMenuItem.Text = "所有资源";
             exportAllAssetsMenuItem.Click += exportAllAssetsMenuItem_Click;
             // 
             // exportSelectedAssetsMenuItem
             // 
             exportSelectedAssetsMenuItem.Name = "exportSelectedAssetsMenuItem";
             exportSelectedAssetsMenuItem.Size = new System.Drawing.Size(249, 26);
-            exportSelectedAssetsMenuItem.Text = "Selected assets";
+            exportSelectedAssetsMenuItem.Text = "所选资源";
             exportSelectedAssetsMenuItem.Click += exportSelectedAssetsMenuItem_Click;
             // 
             // exportFilteredAssetsMenuItem
             // 
             exportFilteredAssetsMenuItem.Name = "exportFilteredAssetsMenuItem";
             exportFilteredAssetsMenuItem.Size = new System.Drawing.Size(249, 26);
-            exportFilteredAssetsMenuItem.Text = "Filtered assets";
+            exportFilteredAssetsMenuItem.Text = "筛选的资源";
             exportFilteredAssetsMenuItem.Click += exportFilteredAssetsMenuItem_Click;
             // 
             // toolStripSeparator3
@@ -565,34 +565,34 @@ namespace AnimeStudio.GUI
             formatSpecificToolStripMenuItem.Enabled = false;
             formatSpecificToolStripMenuItem.Name = "formatSpecificToolStripMenuItem";
             formatSpecificToolStripMenuItem.Size = new System.Drawing.Size(249, 26);
-            formatSpecificToolStripMenuItem.Text = "Format specific";
+            formatSpecificToolStripMenuItem.Text = "特定格式";
             // 
             // toolStripMenuItem2
             // 
             toolStripMenuItem2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { toolStripMenuItem4, toolStripMenuItem5, toolStripMenuItem6 });
             toolStripMenuItem2.Name = "toolStripMenuItem2";
             toolStripMenuItem2.Size = new System.Drawing.Size(249, 26);
-            toolStripMenuItem2.Text = "Raw";
+            toolStripMenuItem2.Text = "原始";
             // 
             // toolStripMenuItem4
             // 
             toolStripMenuItem4.Name = "toolStripMenuItem4";
             toolStripMenuItem4.Size = new System.Drawing.Size(192, 26);
-            toolStripMenuItem4.Text = "All assets";
+            toolStripMenuItem4.Text = "所有资源";
             toolStripMenuItem4.Click += toolStripMenuItem4_Click;
             // 
             // toolStripMenuItem5
             // 
             toolStripMenuItem5.Name = "toolStripMenuItem5";
             toolStripMenuItem5.Size = new System.Drawing.Size(192, 26);
-            toolStripMenuItem5.Text = "Selected assets";
+            toolStripMenuItem5.Text = "所选资源";
             toolStripMenuItem5.Click += toolStripMenuItem5_Click;
             // 
             // toolStripMenuItem6
             // 
             toolStripMenuItem6.Name = "toolStripMenuItem6";
             toolStripMenuItem6.Size = new System.Drawing.Size(192, 26);
-            toolStripMenuItem6.Text = "Filtered assets";
+            toolStripMenuItem6.Text = "筛选的资源";
             toolStripMenuItem6.Click += toolStripMenuItem6_Click;
             // 
             // toolStripMenuItem3
@@ -600,27 +600,27 @@ namespace AnimeStudio.GUI
             toolStripMenuItem3.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { toolStripMenuItem7, toolStripMenuItem8, toolStripMenuItem9 });
             toolStripMenuItem3.Name = "toolStripMenuItem3";
             toolStripMenuItem3.Size = new System.Drawing.Size(249, 26);
-            toolStripMenuItem3.Text = "Dump";
+            toolStripMenuItem3.Text = "转储";
             // 
             // toolStripMenuItem7
             // 
             toolStripMenuItem7.Name = "toolStripMenuItem7";
             toolStripMenuItem7.Size = new System.Drawing.Size(192, 26);
-            toolStripMenuItem7.Text = "All assets";
+            toolStripMenuItem7.Text = "所有资源";
             toolStripMenuItem7.Click += toolStripMenuItem7_Click;
             // 
             // toolStripMenuItem8
             // 
             toolStripMenuItem8.Name = "toolStripMenuItem8";
             toolStripMenuItem8.Size = new System.Drawing.Size(192, 26);
-            toolStripMenuItem8.Text = "Selected assets";
+            toolStripMenuItem8.Text = "所选资源";
             toolStripMenuItem8.Click += toolStripMenuItem8_Click;
             // 
             // toolStripMenuItem9
             // 
             toolStripMenuItem9.Name = "toolStripMenuItem9";
             toolStripMenuItem9.Size = new System.Drawing.Size(192, 26);
-            toolStripMenuItem9.Text = "Filtered assets";
+            toolStripMenuItem9.Text = "筛选的资源";
             toolStripMenuItem9.Click += toolStripMenuItem9_Click;
             // 
             // toolStripMenuItem16
@@ -634,21 +634,21 @@ namespace AnimeStudio.GUI
             // 
             toolStripMenuItem17.Name = "toolStripMenuItem17";
             toolStripMenuItem17.Size = new System.Drawing.Size(192, 26);
-            toolStripMenuItem17.Text = "All assets";
+            toolStripMenuItem17.Text = "所有资源";
             toolStripMenuItem17.Click += toolStripMenuItem17_Click;
             // 
             // toolStripMenuItem24
             // 
             toolStripMenuItem24.Name = "toolStripMenuItem24";
             toolStripMenuItem24.Size = new System.Drawing.Size(192, 26);
-            toolStripMenuItem24.Text = "Selected assets";
+            toolStripMenuItem24.Text = "所选资源";
             toolStripMenuItem24.Click += toolStripMenuItem24_Click;
             // 
             // toolStripMenuItem25
             // 
             toolStripMenuItem25.Name = "toolStripMenuItem25";
             toolStripMenuItem25.Size = new System.Drawing.Size(192, 26);
-            toolStripMenuItem25.Text = "Filtered assets";
+            toolStripMenuItem25.Text = "筛选的资源";
             toolStripMenuItem25.Click += toolStripMenuItem25_Click;
             // 
             // toolStripSeparator2
@@ -661,41 +661,41 @@ namespace AnimeStudio.GUI
             assetsStructureToolStripMenuItem.Enabled = false;
             assetsStructureToolStripMenuItem.Name = "assetsStructureToolStripMenuItem";
             assetsStructureToolStripMenuItem.Size = new System.Drawing.Size(249, 26);
-            assetsStructureToolStripMenuItem.Text = "Assets structure";
+            assetsStructureToolStripMenuItem.Text = "资产结构";
             // 
             // toolStripMenuItem10
             // 
             toolStripMenuItem10.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { toolStripMenuItem11, toolStripMenuItem12, toolStripMenuItem13 });
             toolStripMenuItem10.Name = "toolStripMenuItem10";
             toolStripMenuItem10.Size = new System.Drawing.Size(249, 26);
-            toolStripMenuItem10.Text = "Asset list to XML";
+            toolStripMenuItem10.Text = "资产列表导出为 XML";
             // 
             // toolStripMenuItem11
             // 
             toolStripMenuItem11.Name = "toolStripMenuItem11";
             toolStripMenuItem11.Size = new System.Drawing.Size(192, 26);
-            toolStripMenuItem11.Text = "All assets";
+            toolStripMenuItem11.Text = "所有资源";
             toolStripMenuItem11.Click += toolStripMenuItem11_Click;
             // 
             // toolStripMenuItem12
             // 
             toolStripMenuItem12.Name = "toolStripMenuItem12";
             toolStripMenuItem12.Size = new System.Drawing.Size(192, 26);
-            toolStripMenuItem12.Text = "Selected assets";
+            toolStripMenuItem12.Text = "所选资源";
             toolStripMenuItem12.Click += toolStripMenuItem12_Click;
             // 
             // toolStripMenuItem13
             // 
             toolStripMenuItem13.Name = "toolStripMenuItem13";
             toolStripMenuItem13.Size = new System.Drawing.Size(192, 26);
-            toolStripMenuItem13.Text = "Filtered assets";
+            toolStripMenuItem13.Text = "筛选的资源";
             toolStripMenuItem13.Click += toolStripMenuItem13_Click;
             // 
             // sceneHierarchy
             // 
             sceneHierarchy.Name = "sceneHierarchy";
             sceneHierarchy.Size = new System.Drawing.Size(249, 26);
-            sceneHierarchy.Text = "Scene hierarchy";
+            sceneHierarchy.Text = "场景层级";
             sceneHierarchy.Click += sceneHierarchy_Click;
             // 
             // toolStripSeparator7
@@ -708,41 +708,41 @@ namespace AnimeStudio.GUI
             toolStripMenuItem30.Enabled = false;
             toolStripMenuItem30.Name = "toolStripMenuItem30";
             toolStripMenuItem30.Size = new System.Drawing.Size(249, 26);
-            toolStripMenuItem30.Text = "Models";
+            toolStripMenuItem30.Text = "模型";
             // 
             // modelsIncludeAnimationClips
             // 
             modelsIncludeAnimationClips.CheckOnClick = true;
             modelsIncludeAnimationClips.Name = "modelsIncludeAnimationClips";
             modelsIncludeAnimationClips.Size = new System.Drawing.Size(249, 26);
-            modelsIncludeAnimationClips.Text = "Include AnimationClips ";
+            modelsIncludeAnimationClips.Text = "包含 AnimationClips";
             // 
             // toolStripMenuItem29
             // 
             toolStripMenuItem29.Enabled = false;
             toolStripMenuItem29.Name = "toolStripMenuItem29";
             toolStripMenuItem29.Size = new System.Drawing.Size(249, 26);
-            toolStripMenuItem29.Text = "Models - Objects";
+            toolStripMenuItem29.Text = "模型 - 对象";
             // 
             // modelsMerge
             // 
             modelsMerge.CheckOnClick = true;
             modelsMerge.Name = "modelsMerge";
             modelsMerge.Size = new System.Drawing.Size(249, 26);
-            modelsMerge.Text = "Merge (only selected)";
+            modelsMerge.Text = "合并（仅所选）";
             // 
             // modelsObjectsExportAll
             // 
             modelsObjectsExportAll.Name = "modelsObjectsExportAll";
             modelsObjectsExportAll.Size = new System.Drawing.Size(249, 26);
-            modelsObjectsExportAll.Text = "Export all";
+            modelsObjectsExportAll.Text = "导出全部";
             modelsObjectsExportAll.Click += modelsObjectsExportAll_Click;
             // 
             // modelsObjectsExportSelected
             // 
             modelsObjectsExportSelected.Name = "modelsObjectsExportSelected";
             modelsObjectsExportSelected.Size = new System.Drawing.Size(249, 26);
-            modelsObjectsExportSelected.Text = "Export selected";
+            modelsObjectsExportSelected.Text = "导出所选";
             modelsObjectsExportSelected.Click += modelsObjectsExportSelected_Click;
             // 
             // toolStripMenuItem28
@@ -750,13 +750,13 @@ namespace AnimeStudio.GUI
             toolStripMenuItem28.Enabled = false;
             toolStripMenuItem28.Name = "toolStripMenuItem28";
             toolStripMenuItem28.Size = new System.Drawing.Size(249, 26);
-            toolStripMenuItem28.Text = "Models - Nodes";
+            toolStripMenuItem28.Text = "模型 - 节点";
             // 
             // modelsNodesExportSelected
             // 
             modelsNodesExportSelected.Name = "modelsNodesExportSelected";
             modelsNodesExportSelected.Size = new System.Drawing.Size(249, 26);
-            modelsNodesExportSelected.Text = "Export selected";
+            modelsNodesExportSelected.Text = "导出所选";
             modelsNodesExportSelected.Click += modelsNodesExportSelected_Click;
             // 
             // filterTypeToolStripMenuItem
@@ -764,7 +764,7 @@ namespace AnimeStudio.GUI
             filterTypeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { allToolStripMenuItem });
             filterTypeToolStripMenuItem.Name = "filterTypeToolStripMenuItem";
             filterTypeToolStripMenuItem.Size = new System.Drawing.Size(91, 24);
-            filterTypeToolStripMenuItem.Text = "Filter Type";
+            filterTypeToolStripMenuItem.Text = "筛选类型";
             // 
             // allToolStripMenuItem
             // 
@@ -773,7 +773,7 @@ namespace AnimeStudio.GUI
             allToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             allToolStripMenuItem.Name = "allToolStripMenuItem";
             allToolStripMenuItem.Size = new System.Drawing.Size(110, 26);
-            allToolStripMenuItem.Text = "All";
+            allToolStripMenuItem.Text = "全部";
             allToolStripMenuItem.Click += typeToolStripMenuItem_Click;
             // 
             // miscToolStripMenuItem
@@ -781,7 +781,7 @@ namespace AnimeStudio.GUI
             miscToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { assetMapToolStripMenuItem1, buildAssetMapToolStripMenuItem, assetMapTypeMenuItem, assetBrowserToolStripMenuItem, toolStripSeparator8, cABMapToolStripMenuItem, MapNameComboBox, buildMapToolStripMenuItem, loadCABMapToolStripMenuItem, clearMapToolStripMenuItem, toolStripSeparator15, assetMapCABMapToolStripMenuItem, toolStripTextBox1, buildBothToolStripMenuItem, toolStripSeparator14, toolStripMenuItem20, toolStripMenuItem19, loadAIToolStripMenuItem });
             miscToolStripMenuItem.Name = "miscToolStripMenuItem";
             miscToolStripMenuItem.Size = new System.Drawing.Size(59, 24);
-            miscToolStripMenuItem.Text = "Maps";
+            miscToolStripMenuItem.Text = "地图";
             miscToolStripMenuItem.DropDownOpening += miscToolStripMenuItem_DropDownOpening;
             // 
             // assetMapToolStripMenuItem1
@@ -789,27 +789,27 @@ namespace AnimeStudio.GUI
             assetMapToolStripMenuItem1.Enabled = false;
             assetMapToolStripMenuItem1.Name = "assetMapToolStripMenuItem1";
             assetMapToolStripMenuItem1.Size = new System.Drawing.Size(256, 26);
-            assetMapToolStripMenuItem1.Text = "Asset Map";
+            assetMapToolStripMenuItem1.Text = "资产映射";
             // 
             // buildAssetMapToolStripMenuItem
             // 
             buildAssetMapToolStripMenuItem.Name = "buildAssetMapToolStripMenuItem";
             buildAssetMapToolStripMenuItem.Size = new System.Drawing.Size(256, 26);
-            buildAssetMapToolStripMenuItem.Text = "Build";
+            buildAssetMapToolStripMenuItem.Text = "构建";
             buildAssetMapToolStripMenuItem.Click += buildAssetMapToolStripMenuItem_Click;
             // 
             // assetMapTypeMenuItem
             // 
             assetMapTypeMenuItem.Name = "assetMapTypeMenuItem";
             assetMapTypeMenuItem.Size = new System.Drawing.Size(256, 26);
-            assetMapTypeMenuItem.Text = "Map Type";
+            assetMapTypeMenuItem.Text = "映射类型";
             assetMapTypeMenuItem.DropDownItemClicked += assetMapTypeMenuItem_DropDownItemClicked;
             // 
             // assetBrowserToolStripMenuItem
             // 
             assetBrowserToolStripMenuItem.Name = "assetBrowserToolStripMenuItem";
             assetBrowserToolStripMenuItem.Size = new System.Drawing.Size(256, 26);
-            assetBrowserToolStripMenuItem.Text = "Open Asset Browser";
+            assetBrowserToolStripMenuItem.Text = "打开资产浏览器";
             assetBrowserToolStripMenuItem.Click += loadAssetMapToolStripMenuItem_Click;
             // 
             // toolStripSeparator8
@@ -822,7 +822,7 @@ namespace AnimeStudio.GUI
             cABMapToolStripMenuItem.Enabled = false;
             cABMapToolStripMenuItem.Name = "cABMapToolStripMenuItem";
             cABMapToolStripMenuItem.Size = new System.Drawing.Size(256, 26);
-            cABMapToolStripMenuItem.Text = "CAB Map";
+            cABMapToolStripMenuItem.Text = "CAB 映射";
             // 
             // MapNameComboBox
             // 
@@ -834,21 +834,21 @@ namespace AnimeStudio.GUI
             // 
             buildMapToolStripMenuItem.Name = "buildMapToolStripMenuItem";
             buildMapToolStripMenuItem.Size = new System.Drawing.Size(256, 26);
-            buildMapToolStripMenuItem.Text = "Build";
+            buildMapToolStripMenuItem.Text = "构建";
             buildMapToolStripMenuItem.Click += buildMapToolStripMenuItem_Click;
             // 
             // loadCABMapToolStripMenuItem
             // 
             loadCABMapToolStripMenuItem.Name = "loadCABMapToolStripMenuItem";
             loadCABMapToolStripMenuItem.Size = new System.Drawing.Size(256, 26);
-            loadCABMapToolStripMenuItem.Text = "Load";
+            loadCABMapToolStripMenuItem.Text = "加载";
             loadCABMapToolStripMenuItem.Click += loadCABMapToolStripMenuItem_Click;
             // 
             // clearMapToolStripMenuItem
             // 
             clearMapToolStripMenuItem.Name = "clearMapToolStripMenuItem";
             clearMapToolStripMenuItem.Size = new System.Drawing.Size(256, 26);
-            clearMapToolStripMenuItem.Text = "Delete";
+            clearMapToolStripMenuItem.Text = "删除";
             clearMapToolStripMenuItem.Click += clearMapToolStripMenuItem_Click;
             // 
             // toolStripSeparator15
@@ -861,7 +861,7 @@ namespace AnimeStudio.GUI
             assetMapCABMapToolStripMenuItem.Enabled = false;
             assetMapCABMapToolStripMenuItem.Name = "assetMapCABMapToolStripMenuItem";
             assetMapCABMapToolStripMenuItem.Size = new System.Drawing.Size(256, 26);
-            assetMapCABMapToolStripMenuItem.Text = "Asset Map and CAB Map";
+            assetMapCABMapToolStripMenuItem.Text = "资产映射与 CAB 映射";
             // 
             // toolStripTextBox1
             // 
@@ -873,7 +873,7 @@ namespace AnimeStudio.GUI
             // 
             buildBothToolStripMenuItem.Name = "buildBothToolStripMenuItem";
             buildBothToolStripMenuItem.Size = new System.Drawing.Size(256, 26);
-            buildBothToolStripMenuItem.Text = "Build Both";
+            buildBothToolStripMenuItem.Text = "同时构建";
             buildBothToolStripMenuItem.Click += buildBothToolStripMenuItem_Click;
             // 
             // toolStripSeparator14
@@ -886,14 +886,14 @@ namespace AnimeStudio.GUI
             toolStripMenuItem20.Enabled = false;
             toolStripMenuItem20.Name = "toolStripMenuItem20";
             toolStripMenuItem20.Size = new System.Drawing.Size(256, 26);
-            toolStripMenuItem20.Text = "Asset Index";
+            toolStripMenuItem20.Text = "资产索引";
             // 
             // toolStripMenuItem19
             // 
             toolStripMenuItem19.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { specifyAIVersion });
             toolStripMenuItem19.Name = "toolStripMenuItem19";
             toolStripMenuItem19.Size = new System.Drawing.Size(256, 26);
-            toolStripMenuItem19.Text = "Load from GitHub";
+            toolStripMenuItem19.Text = "从 GitHub 加载";
             // 
             // specifyAIVersion
             // 
@@ -906,14 +906,14 @@ namespace AnimeStudio.GUI
             // 
             loadAIToolStripMenuItem.Name = "loadAIToolStripMenuItem";
             loadAIToolStripMenuItem.Size = new System.Drawing.Size(256, 26);
-            loadAIToolStripMenuItem.Text = "Load from file";
+            loadAIToolStripMenuItem.Text = "从文件加载";
             loadAIToolStripMenuItem.Click += loadAIToolStripMenuItem_Click;
             // 
             // aboutToolStripMenuItem
             // 
             aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
             aboutToolStripMenuItem.Size = new System.Drawing.Size(64, 24);
-            aboutToolStripMenuItem.Text = "About";
+            aboutToolStripMenuItem.Text = "关于";
             aboutToolStripMenuItem.Click += aboutToolStripMenuItem_Click;
             // 
             // assetHelpersToolStripMenuItem
@@ -982,7 +982,7 @@ namespace AnimeStudio.GUI
             tabPage1.Name = "tabPage1";
             tabPage1.Size = new System.Drawing.Size(593, 770);
             tabPage1.TabIndex = 0;
-            tabPage1.Text = "Scene Hierarchy";
+            tabPage1.Text = "场景层级";
             tabPage1.UseVisualStyleBackColor = true;
             // 
             // sceneTreeView
@@ -1004,7 +1004,7 @@ namespace AnimeStudio.GUI
             treeSearch.ForeColor = System.Drawing.SystemColors.WindowText;
             treeSearch.Location = new System.Drawing.Point(0, 0);
             treeSearch.Name = "treeSearch";
-            treeSearch.PlaceholderText = "Search (with Ctrl to check result, with Shift for all, alt for parent nodes)";
+            treeSearch.PlaceholderText = "搜索（Ctrl 检查结果，Shift 查找全部，Alt 查找父节点）";
             treeSearch.Size = new System.Drawing.Size(593, 27);
             treeSearch.TabIndex = 0;
             treeSearch.TextChanged += treeSearch_TextChanged;
@@ -1018,7 +1018,7 @@ namespace AnimeStudio.GUI
             tabPage2.Name = "tabPage2";
             tabPage2.Size = new System.Drawing.Size(593, 770);
             tabPage2.TabIndex = 1;
-            tabPage2.Text = "Asset List";
+            tabPage2.Text = "资产列表";
             tabPage2.UseVisualStyleBackColor = true;
             // 
             // assetListView
@@ -1042,17 +1042,17 @@ namespace AnimeStudio.GUI
             // 
             // columnHeaderName
             // 
-            columnHeaderName.Text = "Name";
+            columnHeaderName.Text = "名称";
             columnHeaderName.Width = 180;
             // 
             // columnHeaderContainer
             // 
-            columnHeaderContainer.Text = "Container";
+            columnHeaderContainer.Text = "容器";
             columnHeaderContainer.Width = 80;
             // 
             // columnHeaderType
             // 
-            columnHeaderType.Text = "Type";
+            columnHeaderType.Text = "类型";
             columnHeaderType.Width = 90;
             // 
             // columnHeaderPathID
@@ -1061,7 +1061,7 @@ namespace AnimeStudio.GUI
             // 
             // columnHeaderSize
             // 
-            columnHeaderSize.Text = "Size";
+            columnHeaderSize.Text = "大小";
             columnHeaderSize.Width = 50;
             // 
             // columnHeaderSHA256
@@ -1075,7 +1075,7 @@ namespace AnimeStudio.GUI
             listSearch.ForeColor = System.Drawing.SystemColors.WindowText;
             listSearch.Location = new System.Drawing.Point(0, 0);
             listSearch.Name = "listSearch";
-            listSearch.PlaceholderText = "Search";
+            listSearch.PlaceholderText = "搜索";
             listSearch.Size = new System.Drawing.Size(593, 27);
             listSearch.TabIndex = 0;
             listSearch.KeyPress += listSearch_KeyPress;
@@ -1087,7 +1087,7 @@ namespace AnimeStudio.GUI
             tabPage3.Name = "tabPage3";
             tabPage3.Size = new System.Drawing.Size(593, 770);
             tabPage3.TabIndex = 2;
-            tabPage3.Text = "Asset Classes";
+            tabPage3.Text = "资产类";
             tabPage3.UseVisualStyleBackColor = true;
             // 
             // classesListView
@@ -1107,7 +1107,7 @@ namespace AnimeStudio.GUI
             // columnHeader1
             // 
             columnHeader1.DisplayIndex = 1;
-            columnHeader1.Text = "Name";
+            columnHeader1.Text = "名称";
             columnHeader1.Width = 300;
             // 
             // columnHeader2
@@ -1155,7 +1155,7 @@ namespace AnimeStudio.GUI
             tabPage4.Name = "tabPage4";
             tabPage4.Size = new System.Drawing.Size(965, 764);
             tabPage4.TabIndex = 0;
-            tabPage4.Text = "Preview";
+            tabPage4.Text = "预览";
             tabPage4.UseVisualStyleBackColor = true;
             // 
             // previewPanel
@@ -1215,7 +1215,7 @@ namespace AnimeStudio.GUI
             FMODcopyright.Name = "FMODcopyright";
             FMODcopyright.Size = new System.Drawing.Size(397, 20);
             FMODcopyright.TabIndex = 9;
-            FMODcopyright.Text = "Audio Engine supplied by FMOD by Firelight Technologies.";
+            FMODcopyright.Text = "音频引擎由 Firelight Technologies 的 FMOD 提供。";
             // 
             // FMODinfoLabel
             // 
@@ -1247,7 +1247,7 @@ namespace AnimeStudio.GUI
             FMODstatusLabel.Name = "FMODstatusLabel";
             FMODstatusLabel.Size = new System.Drawing.Size(66, 20);
             FMODstatusLabel.TabIndex = 6;
-            FMODstatusLabel.Text = "Stopped";
+            FMODstatusLabel.Text = "已停止";
             // 
             // FMODprogressBar
             // 
@@ -1281,7 +1281,7 @@ namespace AnimeStudio.GUI
             FMODloopButton.Name = "FMODloopButton";
             FMODloopButton.Size = new System.Drawing.Size(55, 42);
             FMODloopButton.TabIndex = 3;
-            FMODloopButton.Text = "Loop";
+            FMODloopButton.Text = "循环";
             FMODloopButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             FMODloopButton.UseVisualStyleBackColor = false;
             FMODloopButton.CheckedChanged += FMODloopButton_CheckedChanged;
@@ -1293,7 +1293,7 @@ namespace AnimeStudio.GUI
             FMODstopButton.Name = "FMODstopButton";
             FMODstopButton.Size = new System.Drawing.Size(55, 42);
             FMODstopButton.TabIndex = 2;
-            FMODstopButton.Text = "Stop";
+            FMODstopButton.Text = "停止";
             FMODstopButton.UseVisualStyleBackColor = false;
             FMODstopButton.Click += FMODstopButton_Click;
             // 
@@ -1304,7 +1304,7 @@ namespace AnimeStudio.GUI
             FMODpauseButton.Name = "FMODpauseButton";
             FMODpauseButton.Size = new System.Drawing.Size(55, 42);
             FMODpauseButton.TabIndex = 1;
-            FMODpauseButton.Text = "Pause";
+            FMODpauseButton.Text = "暂停";
             FMODpauseButton.UseVisualStyleBackColor = false;
             FMODpauseButton.Click += FMODpauseButton_Click;
             // 
@@ -1315,7 +1315,7 @@ namespace AnimeStudio.GUI
             FMODplayButton.Name = "FMODplayButton";
             FMODplayButton.Size = new System.Drawing.Size(55, 42);
             FMODplayButton.TabIndex = 0;
-            FMODplayButton.Text = "Play";
+            FMODplayButton.Text = "播放";
             FMODplayButton.UseVisualStyleBackColor = false;
             FMODplayButton.Click += FMODplayButton_Click;
             // 
@@ -1389,7 +1389,7 @@ namespace AnimeStudio.GUI
             tabPage5.Name = "tabPage5";
             tabPage5.Size = new System.Drawing.Size(965, 764);
             tabPage5.TabIndex = 1;
-            tabPage5.Text = "Dump";
+            tabPage5.Text = "转储";
             tabPage5.UseVisualStyleBackColor = true;
             // 
             // dumpTextBox
@@ -1423,7 +1423,7 @@ namespace AnimeStudio.GUI
             toolStripStatusLabel1.Name = "toolStripStatusLabel1";
             toolStripStatusLabel1.Size = new System.Drawing.Size(958, 20);
             toolStripStatusLabel1.Spring = true;
-            toolStripStatusLabel1.Text = "Ready to go";
+            toolStripStatusLabel1.Text = "准备就绪";
             toolStripStatusLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // timer
@@ -1449,21 +1449,21 @@ namespace AnimeStudio.GUI
             // 
             copyToolStripMenuItem.Name = "copyToolStripMenuItem";
             copyToolStripMenuItem.Size = new System.Drawing.Size(365, 24);
-            copyToolStripMenuItem.Text = "Copy text";
+            copyToolStripMenuItem.Text = "复制文本";
             copyToolStripMenuItem.Click += copyToolStripMenuItem_Click;
             // 
             // exportSelectedAssetsToolStripMenuItem
             // 
             exportSelectedAssetsToolStripMenuItem.Name = "exportSelectedAssetsToolStripMenuItem";
             exportSelectedAssetsToolStripMenuItem.Size = new System.Drawing.Size(365, 24);
-            exportSelectedAssetsToolStripMenuItem.Text = "Export selected assets";
+            exportSelectedAssetsToolStripMenuItem.Text = "导出所选资源";
             exportSelectedAssetsToolStripMenuItem.Click += exportSelectedAssetsToolStripMenuItem_Click;
             // 
             // exportAnimatorwithselectedAnimationClipMenuItem
             // 
             exportAnimatorwithselectedAnimationClipMenuItem.Name = "exportAnimatorwithselectedAnimationClipMenuItem";
             exportAnimatorwithselectedAnimationClipMenuItem.Size = new System.Drawing.Size(365, 24);
-            exportAnimatorwithselectedAnimationClipMenuItem.Text = "Export Animator + selected AnimationClips";
+            exportAnimatorwithselectedAnimationClipMenuItem.Text = "导出 Animator + 所选 AnimationClips";
             exportAnimatorwithselectedAnimationClipMenuItem.Visible = false;
             exportAnimatorwithselectedAnimationClipMenuItem.Click += exportAnimatorwithAnimationClipMenuItem_Click;
             // 
@@ -1471,7 +1471,7 @@ namespace AnimeStudio.GUI
             // 
             goToSceneHierarchyToolStripMenuItem.Name = "goToSceneHierarchyToolStripMenuItem";
             goToSceneHierarchyToolStripMenuItem.Size = new System.Drawing.Size(365, 24);
-            goToSceneHierarchyToolStripMenuItem.Text = "Go to scene hierarchy";
+            goToSceneHierarchyToolStripMenuItem.Text = "跳转到场景层级";
             goToSceneHierarchyToolStripMenuItem.Visible = false;
             goToSceneHierarchyToolStripMenuItem.Click += goToSceneHierarchyToolStripMenuItem_Click;
             // 
@@ -1479,7 +1479,7 @@ namespace AnimeStudio.GUI
             // 
             showOriginalFileToolStripMenuItem.Name = "showOriginalFileToolStripMenuItem";
             showOriginalFileToolStripMenuItem.Size = new System.Drawing.Size(365, 24);
-            showOriginalFileToolStripMenuItem.Text = "Show original file";
+            showOriginalFileToolStripMenuItem.Text = "显示原始文件";
             showOriginalFileToolStripMenuItem.Visible = false;
             showOriginalFileToolStripMenuItem.Click += showOriginalFileToolStripMenuItem_Click;
             // 
@@ -1487,7 +1487,7 @@ namespace AnimeStudio.GUI
             // 
             editUnityCNKeysToolStripMenuItem.Name = "editUnityCNKeysToolStripMenuItem";
             editUnityCNKeysToolStripMenuItem.Size = new System.Drawing.Size(246, 26);
-            editUnityCNKeysToolStripMenuItem.Text = "Edit UnityCN Keys";
+            editUnityCNKeysToolStripMenuItem.Text = "编辑 UnityCN 密钥";
             editUnityCNKeysToolStripMenuItem.Click += editUnityCNKeysToolStripMenuItem_Click;
             // 
             // MainForm

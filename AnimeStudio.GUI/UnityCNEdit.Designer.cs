@@ -82,7 +82,7 @@
             cancelBtn.Name = "cancelBtn";
             cancelBtn.Size = new System.Drawing.Size(378, 28);
             cancelBtn.TabIndex = 1;
-            cancelBtn.Text = "Cancel";
+            cancelBtn.Text = "取消";
             cancelBtn.UseVisualStyleBackColor = false;
             // 
             // saveBtn
@@ -92,7 +92,7 @@
             saveBtn.Name = "saveBtn";
             saveBtn.Size = new System.Drawing.Size(378, 28);
             saveBtn.TabIndex = 0;
-            saveBtn.Text = "Save";
+            saveBtn.Text = "保存";
             saveBtn.UseVisualStyleBackColor = false;
             saveBtn.Click += saveBtn_Click;
             // 
@@ -103,7 +103,7 @@
             resetBtn.Name = "resetBtn";
             resetBtn.Size = new System.Drawing.Size(378, 28);
             resetBtn.TabIndex = 2;
-            resetBtn.Text = "Reset";
+            resetBtn.Text = "重置";
             resetBtn.UseVisualStyleBackColor = false;
             resetBtn.Click += resetBtn_Click;
             // 
@@ -148,7 +148,7 @@
             Controls.Add(tableLayoutPanel1);
             Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             Name = "UnityCNEdit";
-            Text = "UnityCN Keys Editor";
+            Text = "UnityCN 密钥编辑器";
             tableLayoutPanel1.ResumeLayout(false);
             tableLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();

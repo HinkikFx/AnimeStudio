@@ -105,7 +105,7 @@
             label4.Name = "label4";
             label4.Size = new System.Drawing.Size(240, 72);
             label4.TabIndex = 14;
-            label4.Text = "Custom Key (UnityCN only) :";
+            label4.Text = "自定义密钥（仅 UnityCN）：";
             label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel2
@@ -159,7 +159,7 @@
             label3.Name = "label3";
             label3.Size = new System.Drawing.Size(240, 72);
             label3.TabIndex = 4;
-            label3.Text = "Game version (Hoyo only) :";
+            label3.Text = "游戏版本（仅 Hoyo）：";
             label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label1
@@ -171,7 +171,7 @@
             label1.Name = "label1";
             label1.Size = new System.Drawing.Size(240, 72);
             label1.TabIndex = 0;
-            label1.Text = "Game type :";
+            label1.Text = "游戏类型：";
             label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
@@ -183,7 +183,7 @@
             label2.Name = "label2";
             label2.Size = new System.Drawing.Size(240, 72);
             label2.TabIndex = 1;
-            label2.Text = "Game :";
+            label2.Text = "游戏：";
             label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // confirmBtn
@@ -194,7 +194,7 @@
             confirmBtn.Name = "confirmBtn";
             confirmBtn.Size = new System.Drawing.Size(406, 35);
             confirmBtn.TabIndex = 9;
-            confirmBtn.Text = "Confirm";
+            confirmBtn.Text = "确认";
             confirmBtn.UseVisualStyleBackColor = false;
             confirmBtn.Click += confirmBtn_Click;
             // 
@@ -205,7 +205,7 @@
             cancelBtn.Name = "cancelBtn";
             cancelBtn.Size = new System.Drawing.Size(240, 35);
             cancelBtn.TabIndex = 8;
-            cancelBtn.Text = "Cancel";
+            cancelBtn.Text = "取消";
             cancelBtn.UseVisualStyleBackColor = false;
             // 
             // panel3
@@ -243,7 +243,7 @@
             MinimumSize = new System.Drawing.Size(700, 400);
             Name = "GameSelector";
             StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            Text = "Game Select";
+            Text = "游戏选择";
             tableLayoutPanel1.ResumeLayout(false);
             tableLayoutPanel1.PerformLayout();
             panel1.ResumeLayout(false);

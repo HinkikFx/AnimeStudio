@@ -17,6 +17,32 @@ namespace AnimeStudio.CLI
         {
             try
             {
+                // Apply command line settings overrides
+                Settings.Default.ApplyCommandLineOptions(
+                    convertTexture: o.ConvertTexture,
+                    convertAudio: o.ConvertAudio,
+                    convertType: o.ConvertType,
+                    eulerFilter: o.EulerFilter,
+                    filterPrecision: o.FilterPrecision,
+                    exportAllNodes: o.ExportAllNodes,
+                    exportSkins: o.ExportSkins,
+                    exportMaterials: o.ExportMaterials,
+                    collectAnimations: o.CollectAnimations,
+                    exportAnimations: o.ExportAnimations,
+                    boneSize: o.BoneSize,
+                    fbxVersion: o.FbxVersion,
+                    fbxFormat: o.FbxFormat,
+                    scaleFactor: o.ScaleFactor,
+                    exportBlendShape: o.ExportBlendShape,
+                    castToBone: o.CastToBone,
+                    restoreExtensionName: o.RestoreExtensionName,
+                    enableFileLogging: o.EnableFileLogging,
+                    minimalAssetMap: o.MinimalAssetMap,
+                    allowDuplicates: o.AllowDuplicates,
+                    types: o.Types,
+                    texs: o.Texs,
+                    uvs: o.Uvs);
+
                 var game = GameManager.GetGame(o.GameName);
 
                 if (game == null)

@@ -6,6 +6,7 @@ using System.CommandLine.Binding;
 using System.CommandLine.Parsing;
 using System.Text.RegularExpressions;
 using System.Collections.Generic;
+using AnimeStudio.CLI.Properties;
 
 namespace AnimeStudio.CLI
 {
@@ -37,7 +38,30 @@ namespace AnimeStudio.CLI
                 optionsBinder.AIFile,
                 optionsBinder.DummyDllFolder,
                 optionsBinder.Input,
-                optionsBinder.Output
+                optionsBinder.Output,
+                optionsBinder.ConvertTexture,
+                optionsBinder.ConvertAudio,
+                optionsBinder.ConvertType,
+                optionsBinder.EulerFilter,
+                optionsBinder.FilterPrecision,
+                optionsBinder.ExportAllNodes,
+                optionsBinder.ExportSkins,
+                optionsBinder.ExportMaterials,
+                optionsBinder.CollectAnimations,
+                optionsBinder.ExportAnimations,
+                optionsBinder.BoneSize,
+                optionsBinder.FbxVersion,
+                optionsBinder.FbxFormat,
+                optionsBinder.ScaleFactor,
+                optionsBinder.ExportBlendShape,
+                optionsBinder.CastToBone,
+                optionsBinder.RestoreExtensionName,
+                optionsBinder.EnableFileLogging,
+                optionsBinder.MinimalAssetMap,
+                optionsBinder.AllowDuplicates,
+                optionsBinder.Types,
+                optionsBinder.Texs,
+                optionsBinder.Uvs
             };
 
             rootCommand.SetHandler(Program.Run, optionsBinder);
@@ -64,6 +88,29 @@ namespace AnimeStudio.CLI
         public DirectoryInfo DummyDllFolder { get; set; }
         public FileInfo Input { get; set; }
         public DirectoryInfo Output { get; set; }
+        public bool? ConvertTexture { get; set; }
+        public bool? ConvertAudio { get; set; }
+        public ImageFormat? ConvertType { get; set; }
+        public bool? EulerFilter { get; set; }
+        public decimal? FilterPrecision { get; set; }
+        public bool? ExportAllNodes { get; set; }
+        public bool? ExportSkins { get; set; }
+        public bool? ExportMaterials { get; set; }
+        public bool? CollectAnimations { get; set; }
+        public bool? ExportAnimations { get; set; }
+        public decimal? BoneSize { get; set; }
+        public int? FbxVersion { get; set; }
+        public int? FbxFormat { get; set; }
+        public decimal? ScaleFactor { get; set; }
+        public bool? ExportBlendShape { get; set; }
+        public bool? CastToBone { get; set; }
+        public bool? RestoreExtensionName { get; set; }
+        public bool? EnableFileLogging { get; set; }
+        public bool? MinimalAssetMap { get; set; }
+        public bool? AllowDuplicates { get; set; }
+        public string Types { get; set; }
+        public string Texs { get; set; }
+        public string Uvs { get; set; }
     }
 
     public class OptionsBinder : BinderBase<Options>
@@ -85,6 +132,29 @@ namespace AnimeStudio.CLI
         public readonly Option<DirectoryInfo> DummyDllFolder;
         public readonly Argument<FileInfo> Input;
         public readonly Argument<DirectoryInfo> Output;
+        public readonly Option<bool> ConvertTexture;
+        public readonly Option<bool> ConvertAudio;
+        public readonly Option<ImageFormat> ConvertType;
+        public readonly Option<bool> EulerFilter;
+        public readonly Option<decimal> FilterPrecision;
+        public readonly Option<bool> ExportAllNodes;
+        public readonly Option<bool> ExportSkins;
+        public readonly Option<bool> ExportMaterials;
+        public readonly Option<bool> CollectAnimations;
+        public readonly Option<bool> ExportAnimations;
+        public readonly Option<decimal> BoneSize;
+        public readonly Option<int> FbxVersion;
+        public readonly Option<int> FbxFormat;
+        public readonly Option<decimal> ScaleFactor;
+        public readonly Option<bool> ExportBlendShape;
+        public readonly Option<bool> CastToBone;
+        public readonly Option<bool> RestoreExtensionName;
+        public readonly Option<bool> EnableFileLogging;
+        public readonly Option<bool> MinimalAssetMap;
+        public readonly Option<bool> AllowDuplicates;
+        public readonly Option<string> Types;
+        public readonly Option<string> Texs;
+        public readonly Option<string> Uvs;
 
         public OptionsBinder()
         {
@@ -189,6 +259,30 @@ namespace AnimeStudio.CLI
 
             GameName.FromAmong(GameManager.GetGameNames());
 
+            ConvertTexture = new Option<bool>("--convert_texture", "Convert texture assets.");
+            ConvertAudio = new Option<bool>("--convert_audio", "Convert audio assets.");
+            ConvertType = new Option<ImageFormat>("--convert_type", "Image format for texture conversion.");
+            EulerFilter = new Option<bool>("--euler_filter", "Apply Euler filter to rotations.");
+            FilterPrecision = new Option<decimal>("--filter_precision", "Precision for Euler filter.");
+            ExportAllNodes = new Option<bool>("--export_all_nodes", "Export all nodes.");
+            ExportSkins = new Option<bool>("--export_skins", "Export skin data.");
+            ExportMaterials = new Option<bool>("--export_materials", "Export materials.");
+            CollectAnimations = new Option<bool>("--collect_animations", "Collect animations.");
+            ExportAnimations = new Option<bool>("--export_animations", "Export animations.");
+            BoneSize = new Option<decimal>("--bone_size", "Size of bones in export.");
+            FbxVersion = new Option<int>("--fbx_version", "FBX version to export.");
+            FbxFormat = new Option<int>("--fbx_format", "FBX format (0=binary, 1=ascii).");
+            ScaleFactor = new Option<decimal>("--scale_factor", "Scale factor for export.");
+            ExportBlendShape = new Option<bool>("--export_blend_shape", "Export blend shapes.");
+            CastToBone = new Option<bool>("--cast_to_bone", "Cast to bone.");
+            RestoreExtensionName = new Option<bool>("--restore_extension_name", "Restore extension names.");
+            EnableFileLogging = new Option<bool>("--enable_file_logging", "Enable file logging.");
+            MinimalAssetMap = new Option<bool>("--minimal_asset_map", "Create minimal asset map.");
+            AllowDuplicates = new Option<bool>("--allow_duplicates", "Allow duplicate assets.");
+            Types = new Option<string>("--settings_types", "Types setting value.");
+            Texs = new Option<string>("--settings_texs", "Texs setting value.");
+            Uvs = new Option<string>("--settings_uvs", "Uvs setting value.");
+
             LoggerFlags.SetDefaultValue(new LoggerEvent[] { LoggerEvent.Debug, LoggerEvent.Info, LoggerEvent.Warning, LoggerEvent.Error });
             GroupAssetsType.SetDefaultValue(AssetGroupOption.ByType);
             AssetExportType.SetDefaultValue(ExportType.Convert);
@@ -251,7 +345,30 @@ namespace AnimeStudio.CLI
             AIFile = bindingContext.ParseResult.GetValueForOption(AIFile),
             DummyDllFolder = bindingContext.ParseResult.GetValueForOption(DummyDllFolder),
             Input = bindingContext.ParseResult.GetValueForArgument(Input),
-            Output = bindingContext.ParseResult.GetValueForArgument(Output)
+            Output = bindingContext.ParseResult.GetValueForArgument(Output),
+            ConvertTexture = bindingContext.ParseResult.GetValueForOption(ConvertTexture),
+            ConvertAudio = bindingContext.ParseResult.GetValueForOption(ConvertAudio),
+            ConvertType = bindingContext.ParseResult.GetValueForOption(ConvertType),
+            EulerFilter = bindingContext.ParseResult.GetValueForOption(EulerFilter),
+            FilterPrecision = bindingContext.ParseResult.GetValueForOption(FilterPrecision),
+            ExportAllNodes = bindingContext.ParseResult.GetValueForOption(ExportAllNodes),
+            ExportSkins = bindingContext.ParseResult.GetValueForOption(ExportSkins),
+            ExportMaterials = bindingContext.ParseResult.GetValueForOption(ExportMaterials),
+            CollectAnimations = bindingContext.ParseResult.GetValueForOption(CollectAnimations),
+            ExportAnimations = bindingContext.ParseResult.GetValueForOption(ExportAnimations),
+            BoneSize = bindingContext.ParseResult.GetValueForOption(BoneSize),
+            FbxVersion = bindingContext.ParseResult.GetValueForOption(FbxVersion),
+            FbxFormat = bindingContext.ParseResult.GetValueForOption(FbxFormat),
+            ScaleFactor = bindingContext.ParseResult.GetValueForOption(ScaleFactor),
+            ExportBlendShape = bindingContext.ParseResult.GetValueForOption(ExportBlendShape),
+            CastToBone = bindingContext.ParseResult.GetValueForOption(CastToBone),
+            RestoreExtensionName = bindingContext.ParseResult.GetValueForOption(RestoreExtensionName),
+            EnableFileLogging = bindingContext.ParseResult.GetValueForOption(EnableFileLogging),
+            MinimalAssetMap = bindingContext.ParseResult.GetValueForOption(MinimalAssetMap),
+            AllowDuplicates = bindingContext.ParseResult.GetValueForOption(AllowDuplicates),
+            Types = bindingContext.ParseResult.GetValueForOption(Types),
+            Texs = bindingContext.ParseResult.GetValueForOption(Texs),
+            Uvs = bindingContext.ParseResult.GetValueForOption(Uvs)
         };
     }
 }

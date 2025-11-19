@@ -41,6 +41,7 @@ namespace AnimeStudio
             Games.Add(index++, new Mr0k(GameType.ZZZ_CB1, "CBT 1", Mr0kExpansionKey, initVector: Mr0kInitVector, blockKey: Mr0kBlockKey));
             Games.Add(index++, new Mhy(GameType.ZZZ_CB2, "CBT 2", GIMhyShiftRow, GIMhyKey, GIMhyMul, null, GISBox, null, 0uL));
             Games.Add(index++, new Game(GameType.HNA_CB1, "CBT 1"));
+            Games.Add(index++, new Game(GameType.HYG_CB1, "CBT 1"));
             Games.Add(index++, new Mr0k(GameType.TOT, "Live", Mr0kExpansionKey, initVector: Mr0kInitVector, blockKey: Mr0kBlockKey, postKey: ToTKey));
             Games.Add(index++, new Game(GameType.Naraka, "Naraka"));
             Games.Add(index++, new Game(GameType.EnsembleStars, "Ensemble Stars"));
@@ -59,6 +60,7 @@ namespace AnimeStudio
             Games.Add(index++, new Game(GameType.GirlsFrontline, "Girls Frontline"));
             Games.Add(index++, new Game(GameType.Reverse1999, "Reverse: 1999"));
             Games.Add(index++, new Game(GameType.ArknightsEndfield, "Arknights Endfield"));
+            Games.Add(index++, new Game(GameType.Arknights, "Arknights"));
             Games.Add(index++, new Game(GameType.JJKPhantomParade, "JJK Phantom Parade"));
             Games.Add(index++, new Game(GameType.MuvLuvDimensions, "Muv-Luv Dimensions"));
             Games.Add(index++, new Game(GameType.PartyAnimals, "Party Animals"));
@@ -198,6 +200,7 @@ namespace AnimeStudio
         ZZZ_CB1,
         ZZZ_CB2,
         HNA_CB1,
+        HYG_CB1,
         TOT,
         Naraka,
         EnsembleStars,
@@ -216,6 +219,7 @@ namespace AnimeStudio
         GirlsFrontline,
         Reverse1999,
         ArknightsEndfield,
+        Arknights,
         JJKPhantomParade,
         MuvLuvDimensions,
         PartyAnimals,
@@ -277,11 +281,13 @@ namespace AnimeStudio
         public static bool IsSRCB2(this GameType type) => type == GameType.SR_CB2;
         public static bool IsSR(this GameType type) => type == GameType.SR;
         public static bool IsHNACB1(this GameType type) => type == GameType.HNA_CB1;
+        public static bool IsHYGCB1(this GameType type) => type == GameType.HYG_CB1;
         public static bool IsTOT(this GameType type) => type == GameType.TOT;
         public static bool IsNaraka(this GameType type) => type == GameType.Naraka;
         public static bool IsOPFP(this GameType type) => type == GameType.OPFP;
         public static bool IsNetEase(this GameType type) => type == GameType.NetEase;
         public static bool IsArknightsEndfield(this GameType type) => type == GameType.ArknightsEndfield;
+        public static bool IsArknights(this GameType type) => type == GameType.Arknights;
         public static bool IsLoveAndDeepspace(this GameType type) => type == GameType.LoveAndDeepspace;
         public static bool IsExAstris(this GameType type) => type == GameType.ExAstris;
         public static bool IsPerpetualNovelty(this GameType type) => type == GameType.PerpetualNovelty;
@@ -323,7 +329,7 @@ namespace AnimeStudio
 
         public static bool IsMhyGroup(this GameType type) => type switch
         {
-            GameType.GI or GameType.GI_Pack or GameType.GI_CB1 or GameType.GI_CB2 or GameType.GI_CB3 or GameType.GI_CB3Pre or GameType.BH3 or GameType.BH3Pre or GameType.BH3PrePre or GameType.SR_CB2 or GameType.SR or GameType.ZZZ_CB1 or GameType.ZZZ_CB2 or GameType.ZZZ or GameType.TOT => true,
+            GameType.GI or GameType.GI_Pack or GameType.GI_CB1 or GameType.GI_CB2 or GameType.GI_CB3 or GameType.GI_CB3Pre or GameType.BH3 or GameType.BH3Pre or GameType.BH3PrePre or GameType.SR_CB2 or GameType.SR or GameType.ZZZ_CB1 or GameType.ZZZ_CB2 or GameType.ZZZ or GameType.HYG_CB1 or GameType.TOT => true,
             _ => false,
         };
     }

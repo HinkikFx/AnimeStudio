@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
 using static AnimeStudio.GUI.Exporter;
+using static AnimeStudio.AssetsManager;
 
 namespace AnimeStudio.GUI
 {
@@ -272,6 +273,10 @@ namespace AnimeStudio.GUI
             var mihoyoBinDataNames = new List<(PPtr<Object>, string)>();
             var containers = new List<(PPtr<Object>, string)>();
             Progress.Reset();
+            Logger.Info($"Loading {objectCount} objects from {assetsManager.assetsFileList.Count} files.");
+            var assetBundleName = "";
+
+            var fastAssetItemFilterData = new HashSet<AssetFilterDataItem>(assetsManager.FilterData.Items, new AssetFilterDataItemEqualityComparer());
             foreach (var assetsFile in assetsManager.assetsFileList)
             {
                 foreach (var asset in assetsFile.Objects)
@@ -286,14 +291,11 @@ namespace AnimeStudio.GUI
 
                     if (asset is not AssetBundle && asset is not ResourceManager)
                     {
-                        if (assetsManager.FilterData.Items.Count > 0 && !assetsManager.FilterData.Items.Any(x =>
-                        x.Name == assetItem.Text &&
-                        x.PathID == assetItem.m_PathID &&
-                        x.Type == assetItem.Type))
-                            {
-                                Logger.Verbose($"Skipped {(assetItem.Text.Length > 0 ? assetItem.Text : "an asset")} because filter data was set and it was missing from it");
-                                continue;
-                            }
+                        if (fastAssetItemFilterData.Count > 0 && !fastAssetItemFilterData.Contains(new AssetFilterDataItem { Source = assetItem.SourceFile.fullName, Name = assetItem.Text, PathID = assetItem.m_PathID, Type = assetItem.Type }))
+                        {
+                            Logger.Verbose($"Skipped {(assetItem.Text.Length > 0 ? assetItem.Text : "an asset")} because filter data was set and it was missing from it");
+                            continue;
+                        }
                     }
                     
                     objectAssetItemDic.Add(asset, assetItem);
@@ -321,6 +323,7 @@ namespace AnimeStudio.GUI
                             exportable = ClassIDType.PlayerSettings.CanExport();
                             break;
                         case AssetBundle m_AssetBundle:
+                            assetBundleName = m_AssetBundle.Name;
                             if (!SkipContainer)
                             {
                                 foreach (var m_Container in m_AssetBundle.m_Container)
@@ -329,7 +332,7 @@ namespace AnimeStudio.GUI
                                     var preloadSize = m_Container.Value.preloadSize;
                                     var preloadEnd = preloadIndex + preloadSize;
 
-                                    switch(preloadIndex)
+                                    switch (preloadIndex)
                                     {
                                         case int n when n < 0:
                                             Logger.Warning($"preloadIndex {preloadIndex} is out of preloadTable range");
@@ -337,6 +340,11 @@ namespace AnimeStudio.GUI
                                         default:
                                             for (int k = preloadIndex; k < preloadEnd; k++)
                                             {
+                                                string containerName = m_Container.Key;
+                                                if (int.TryParse(m_Container.Key, out _) && Properties.Settings.Default.useBundleContainerName)
+                                                {
+                                                    containerName = assetBundleName;
+                                                }
                                                 containers.Add((m_AssetBundle.m_PreloadTable[k], m_Container.Key));
                                             }
                                             break;
@@ -370,6 +378,7 @@ namespace AnimeStudio.GUI
                         case Sprite _ when ClassIDType.Sprite.CanExport():
                         case Material _ when ClassIDType.Material.CanExport():
                         case MiHoYoBinData _ when ClassIDType.MiHoYoBinData.CanExport():
+                        case NapAssetBundleIndexAsset _ when ClassIDType.NapAssetBundleIndexAsset.CanExport():
                         case Shader _ when ClassIDType.Shader.CanExport():
                         case Animator _ when ClassIDType.Animator.CanExport():
                         case MonoBehaviour _ when ClassIDType.MonoBehaviour.CanExport():
@@ -400,7 +409,7 @@ namespace AnimeStudio.GUI
                     if (int.TryParse(name, NumberStyles.HexNumber, CultureInfo.InvariantCulture, out var hash))
                     {
                         assetItem.Text = name;
-                        assetItem.Container = hash.ToString();
+                        assetItem.Container = Properties.Settings.Default.useBundleContainerName ? assetBundleName : hash.ToString();
                     }
                     else assetItem.Text = $"BinFile #{assetItem.m_PathID}";
                 }
@@ -467,10 +476,7 @@ namespace AnimeStudio.GUI
 
                         if (obj is not GameObject)
                         {
-                            if (assetsManager.FilterData.Items.Count > 0 && !assetsManager.FilterData.Items.Any(x =>
-                            x.Name == assetItem.Text &&
-                            x.PathID == assetItem.m_PathID &&
-                            x.Type == assetItem.Type))
+                            if (fastAssetItemFilterData.Count > 0 && !fastAssetItemFilterData.Contains(new AssetFilterDataItem { Source = assetItem.SourceFile.fullName, Name = assetItem.Text, PathID = assetItem.m_PathID, Type = assetItem.Type }))
                             {
                                 Logger.Verbose($"Skipped {(assetItem.Text.Length > 0 ? assetItem.Text : "an asset")} because filter data was set and it was missing from it");
                                 continue;
